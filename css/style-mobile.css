@@ -49,17 +49,20 @@ html, body {
     margin-top: 150px;
     position: relative;
     background-color: white;
-    height: 80%;
+    height: 90%;
     width: 90%;
-    max-width: 500px;
+    max-width: 300px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     box-shadow: 0 0 2em var(--very-dark-desaturated-blue);
 }
+
 .questions {
-    height: 90%;
+    height: 100%;
+    margin-bottom: 30%;
+    
 }
 
 .languages {

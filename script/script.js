@@ -12,15 +12,19 @@ questions.forEach((question, index) =>{
     question.addEventListener("click", event => {
 
         onlyOneQuestion(question);
-        event.preventDefault();
-        if (answer.style.display == "block"){
-            // ESCONDE RESPOSTA
-            hideAnswer(question, answer, arrow);
 
-        } else {
-            // MOSTRA RESPOTA
-            showAnswer(question, answer, arrow);
-        }
+        setTimeout(function(){          
+            event.preventDefault();
+            if (answer.style.display == "block"){
+                // ESCONDE RESPOSTA
+                hideAnswer(question, answer, arrow);
+
+            } else {
+                // MOSTRA RESPOTA
+                showAnswer(question, answer, arrow);
+            };
+        
+        }, 500);
     });
 
 });

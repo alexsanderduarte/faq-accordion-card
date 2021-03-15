@@ -41,30 +41,43 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
 .faq {
-    margin-top: 100px;
+    margin-top: 150px;
     position: relative;
     background-color: white;
-    height: 70%;
+    height: 80%;
     width: 90%;
+    max-width: 500px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    overflow: hidden;
+    box-shadow: 0 0 2em var(--very-dark-desaturated-blue);
 }
-.image {
-    width: 100%;
-    height: 30%;
-}
-
 .questions {
     height: 90%;
 }
+
+.languages {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    height: 10%;
+    top: 93%;
+    right: 5%;
+}
+
+.languages a img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
 
 .questions dl {
     width: 100%;
@@ -107,21 +120,28 @@ html, body {
     color: var(--dark-grayish-blue);
 }
 
-.shadow, .woman, .box {
-    position: fixed;    
+.shadow {
+    display: none;
+    position: relative;
+    height: 150%;
+    width: 80%;
+    bottom: 85%;
+    left: 10%;
 }
 
-.shadow{
-    width: 65%;
-    height: 32%;
-    left: 15%;
-    bottom: 65%;
+.image {
+    width: 100%;
+    height: 30%;
+    background: url("../images/bg-pattern-mobile.svg") no-repeat;
+    background-position: center top;
+    background-size: 70%;
 }
 .woman {
-    width: 65%;
-    height: 27%;    
-    left: 15%;
-    bottom: 68%;
+    position: relative;
+    width: 70%;
+    height: 120%;
+    left: 16%;
+    bottom: 70%;
 }
 .box{
     display: none;
